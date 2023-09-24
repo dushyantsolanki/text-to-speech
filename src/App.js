@@ -13,6 +13,7 @@ function App() {
   const [value, setValue] = useState();
   const { speak, voices } = useSpeechSynthesis();
   const [voiceName, setvoiceName] = useState();
+  console.log(voiceName);
   const handleChange = (event) => {
     setvoiceName(event.target.value);
   };
